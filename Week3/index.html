@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTROL // 2019</title>
+    <style>
+        /*Remember: '.' for class, '#' for id*/
+        @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
+        * {
+            --button-bg: #0b0d0c;
+            --button-border: #35393a;
+            --button-color: #909291;
+            --button-hover: #e7e7e7;
+            --control-red: rgb(182,33,33);
+            font-family: "Bricolage Grotesque", sans-serif;
+            font-optical-sizing: auto;
+
+            font-variation-settings:
+                "wdth" 100;
+        }
+        body {
+            background: url('./assets/Polaris.webp');
+            background-color: slategray;
+            padding:95px;
+            overflow: hidden;
+        }
+        .return {
+            color: var(--button-hover);
+        }
+        #logo {
+            margin-bottom: 185px;
+        }
+        #logo img {
+            width: 256px;
+        }
+        .nav-group {
+            margin-bottom: 100px;
+            padding: 0px;
+        }
+        .nav-group li {
+            background-color: var(--button-bg);
+            width: 300px;
+            color: var(--button-color);
+            padding: 20px;
+            border: var(--button-border) 1px solid;
+            margin-bottom: 5px;
+            list-style: none;
+        }
+        .nav-group li:hover {
+            background-color: var(--button-hover);
+            color: var(--button-bg);
+        }
+        #B {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header id="logo"><img src=".\assets\Control_video_game_logo.svg.png"></header>
+
+    <nav class="nav-class">
+        <ul class="nav-group">
+            <li>Continue Game</li>
+            <li>New Game</li>
+            <li>Mission Select</li>
+            <li>Options</li>
+            <li>Credits</li>
+        </ul>
+    </nav>
+
+        <div class="return"><span id="B">B</span> Return to Title Screen</div>
+    <footer class="footer">
+        <h2>Credits</h2>
+        Background Image: <a href="https://control.fandom.com/wiki/Polaris">Control Wiki</a>
+    </footer>
+
+</body>
+</html>

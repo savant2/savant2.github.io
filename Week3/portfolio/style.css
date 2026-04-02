@@ -1,0 +1,80 @@
+/*Remember: '.' for class, '#' for id*/
+/*.yeseva-one-regular {
+  font-family: "Yeseva One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.open-sans-<uniquifier> {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}*/
+* {
+    /* CSS HEX */
+    --cinnamon-wood: #ad715eff;
+    --lavender-grey: #91a1bcff;
+    --lavender: #cbd5efff;
+    --french-blue: #373681ff;
+    --alice-blue: #d9edf9ff;
+    margin: 8px;
+    padding: 5px;
+    color: var(--cinnamon-wood);
+}
+body {
+    background-color: var(--french-blue);
+    background: url('./assets/css-pattern-by-magicpattern.png');
+    text-align: center;
+    padding-top: 25px;
+    font-family: "Yeseva One", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.intro {   
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    color: var(--lavender);
+    text-shadow: 0 1px 2px var(--lavender-grey);
+}
+.cards div {
+    text-transform: uppercase;
+    background-color: var(--alice-blue);
+    border: 4px ridge var(--cinnamon-wood);
+    border-radius: 8px;
+    width:250px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Yeseva One", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: larger;
+    opacity: .8;
+    display: inline-block;
+}
+.cards div:hover {
+    height:250px;
+    background-color: var(--french-blue);
+    transition:500ms;
+}
+.edu {
+    text-shadow: 0 1px 2px var(--lavender-grey);
+    list-style: none;
+    line-height: 20px;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+.edu li {
+    color: var(--lavender);
+}
+footer img {
+    height: 50px;
+}
