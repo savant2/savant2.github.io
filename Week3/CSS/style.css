@@ -1,0 +1,69 @@
+/*Remember: '.' for class, '#' for id*/
+/*
+.noto-sans-meroitic-regular {
+  font-family: "Noto Sans Meroitic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+  
+.open-sans-<uniquifier> {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+*/
+* {
+    /* CSS HEX */
+    --eggshell: #faf3ddff;
+    --tea-green: #c8d5b9ff;
+    --muted-teal: #8fc0a9ff;
+    --tropical-teal: #68b0abff;
+    --jungle-teal: #4a7c59ff;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+body {
+    background-color: var(--jungle-teal);
+}
+.card {
+    height: 750px;
+    width: 500px;
+    background-color: var(--tropical-teal);
+    padding: 36px;
+    border-radius: 12px;
+    box-shadow: 5px 3px var(--muted-teal);
+    margin-left: auto;
+    margin-right: auto;
+}
+.card img {
+    height:60%;
+    width:100%;
+    object-fit:cover;
+    margin-bottom: 12px;
+}
+h1 {
+    color:var(--jungle-teal);
+    font-family: "Noto Sans Meroitic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+p {
+    color:var(--eggshell);
+}
+button {
+    background-color: var(--tea-green);
+    border-radius: 12px;
+    border-color:var(--jungle-teal);
+}
+a {
+    text-decoration: none;
+    color: var(--jungle-teal);
+    text-shadow: 1px 1px var(--muted-teal);
+}
