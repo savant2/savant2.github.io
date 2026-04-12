@@ -1,0 +1,123 @@
+/*
+  font-family: "IBM Plex Mono", monospace;
+  font-family: "News Cycle",
+  sans-serif;
+
+*/
+
+* {
+  --primaryWhite: white;
+  --primaryBlack: black;
+  --emphasisRed: #C20000;
+  --size: 12px;
+  font-family: "IBM Plex Mono", monospace;
+}
+body {
+  background-color: var(--primaryBlack);
+  color: var(--primaryWhite);
+}
+nav img {
+  height: 60px;
+}
+nav {
+  background-color: var(--primaryBlack);
+  font-size: var(--size);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100px;
+  padding: 20px;
+  z-index: 99;
+  position: sticky;
+  top: 0px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: 20px;
+}
+nav li {
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 10px;
+}
+nav li:hover {
+  background-color: var(--emphasisRed);
+  color: var(--primaryBlack);
+}
+.hero {
+  background-image: url('./assets/thehiss.webp');
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  font-size: xx-large;
+  font-family: "News Cycle";
+  display: grid;
+  grid-template-areas: 
+  "header header"
+  "protect paragraph";
+  justify-content: center;
+  align-items: center;
+}
+header {
+  grid-area: header;
+  text-align: center;
+}
+#protect {
+  grid-area: paragraph;
+  text-align: center;
+}
+h2 {
+  font-size: 36px;
+  font: sans-serif;
+}
+.message {
+  display: grid;
+  grid-template-columns: 70% 30%;
+}
+.contentLeft {
+  margin:0;
+}
+.director {
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+.contentRight {
+  margin:0;
+}
+.dashboard {
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  grid-template-rows: 150px 150px;
+  gap: 4px;
+}
+.dashboard div {
+  background-color: var(--primaryWhite);
+  color: var(--primaryBlack);
+  font-family: "IBM Plex Mono", monospace;
+  font-size: var(--size);
+  border-radius: 5px;
+  padding-inline: 20px;
+}
+.dashboard h2 {
+  color: var(--emphasisRed);
+}
+.boardlogo {
+  height: 126px;
+}
+footer {
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+}
+#about {
+  font-size: var(--size);
+  display: table-column;
+
+}
+#credit {
+  font-size: var(--size);
+  display: inline-table;
+}
