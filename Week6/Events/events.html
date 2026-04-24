@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events Overview</title>
+
+    <!--IF THE EVENT LISTENER IS ON THE HTML SIDE AND / OR IF YOU ARE USING INLINE ONCLICK / EVENT LISTENERS ,THIS HAS TO GO TO THE BOTTOM OF THE BODY TAG AND YOU NEED TO REMOVE THE MODULE -->
+    <script type="module" src="./events.js"></script>
+    <link href="./event.css" rel="stylesheet"/>
+    <!--INSPIRED BY SOMEONE ELSE'S CODE IN CLAUDE.AI // THEY HAD PUT IN THE PROMPT:  "best ways to showcase some graphs"-->
+</head>
+
+<body>
+    
+    <div class="content">
+        <div class="eventInput">
+            <div class="buttonRow">
+                <!--THE EVENT LISTENER IS ON THE HTML SIDE // REMEMBER TO PUT YOUR SCRIPT TAG BELOW THE HTML-->
+                <button id='onClick' onclick="document.getElementById('explainer').innerHTML='I did this inline!'">onclick in-line</button>
+                <button id='clickEvent'>click event</button>
+                <button id="mouse">mouse over/mouse out</button>
+                <button id="keyDown">press 'Enter' to trigger</button>
+                <input id="input" type="text" placeholder='on input' onfocus="document.getElementById('input').style.border = '2px solid red'"/>
+            </div>
+
+            <div id="explainer">
+                this will output all the explainer for the button that we have just clicked!
+              
+            </div>
+
+            
+        </div>
+
+        <div class="eventOutput">
+            <h3>cool html examples</h3>
+            <div class="buttonRow">
+                <button id="drawer">show/hide nav</button>
+
+                <button id="modal">a popout window</button>
+
+                <button id="darkmode">switch to dark mode</button>
+                
+                <button id="accordion">click me! i expand!</div>
+                <div id="open">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit voluptate necessitatibus, quo vero aperiam dolor mollitia facilis. Facilis culpa autem quidem nobis cumque totam natus aspernatur aut ipsa, vitae incidunt.</div>
+                
+
+
+            </div>
+
+        </div>
+    </div>
+   
+    <nav id="nav">
+        <ul>
+            <li>link</li>
+            <li>link</li>
+            <li>link</li>
+            <li>link</li>
+            <li>link</li>
+            <li>link</li>
+        </ul>
+
+        <button id="close">hide</button>
+    </nav>
+
+    <!--SCRIPT TAG GOES HERE IF WE ARE USING ONCLICK ATTRIBUTE BECAUSE THE CONTENT NEEDS TO LOAD -->
+
+    <div class="modal">
+        <div id="overlay">
+            I AM AN OVERLAY HI!!!! 
+            <button id="closeModal">hide</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
